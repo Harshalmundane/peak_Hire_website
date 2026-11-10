@@ -48,11 +48,7 @@ export default function CourseDetail({ course: c }) {
                     <span className="ph-weeks"><i className="bi bi-clock-fill me-1" />{c.weeks}</span>
                   </div>
                   <div className="p-3">
-                    <div className="d-flex justify-content-between align-items-center mb-3">
-                      <div><del className="text-secondary small me-2">{c.old}</del><span className="fs-4 fw-bold">{c.price}</span></div>
-                      <span className="ph-off">{c.off}</span>
-                    </div>
-                    <button className="btn btn-ph w-100 mb-2" onClick={() => open(`Enroll: ${c.title}`, `${c.price} · ${c.weeks}`)}>Enroll Now</button>
+                    <button className="btn btn-ph w-100 mb-2" onClick={() => open(`Enroll: ${c.title}`, c.weeks)}>Enroll Now</button>
                     <a href="#syllabus" className="btn btn-ph-soft w-100">View Syllabus PDF</a>
                   </div>
                 </div>

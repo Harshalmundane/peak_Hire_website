@@ -2,7 +2,7 @@
 export const site = {
   name: "PeakHire",
   tagline: "Solutions",
-  topbarText: "Premier Enterprise IT Academy & Tech Upskilling",
+  topbarText: "Peakhire Solutions",
   phone: "+91 76708 20107",
   phoneHref: "tel:+917670820107",
   whatsappHref: "https://wa.me/917670820107",

@@ -6,4 +6,5 @@ export const courseImages = {
   sap: u("photo-1551288049-bebda4e38f71"),
   data: u("photo-1460925895917-afdab827c52f"),
   hr: u("photo-1521737711867-e3b97375f902"),
+  fullstack: u("photo-1498050108023-c5249f4df085"),
 };

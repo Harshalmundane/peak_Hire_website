@@ -16,7 +16,7 @@ export default function CourseCatalog({ onEnroll }) {
             <h2 className="ph-h2 mb-1">Explore Premier IT Certification Programs</h2>
             <p className="text-secondary small mb-0">Curated by veteran enterprise architects with live cloud tenants and real-world project portfolios.</p>
           </div>
-          <a href="#courses" onClick={() => setActive("All Tracks")} className="small fw-semibold text-ph text-decoration-none mt-2">View All Programs (12+) →</a>
+          <a href="#courses" onClick={() => setActive("All Tracks")} className="small fw-semibold text-ph text-decoration-none mt-2">View All Programs (6+) →</a>
         </div>
         <div className="ph-chips mb-4" role="tablist">
           {filters.map((f) => (

@@ -77,7 +77,7 @@ export const courses = [
   {
     slug: "hr-payroll-training", track: "HR & Payroll", eco: "HR Operations", ecoColor: "#0284c7", badge: "HR & PAYROLL", badgeColor: "#e11d48", img: courseImages.hr,
     weeks: "6-8 Weeks", rating: "4.8", enrolled: "1,020", old: "₹28,000", price: "₹18,000", off: "36% Off",
-    title: "HR Operations & Payroll Training",
+    title: "HR Recruitment Internship Program",
     desc: "Develop practical understanding of HR operations and payroll-related processes for HR administration and payroll roles.",
     page: {
       seoTitle: "HR & Payroll Training Online | Peakhire Solutions",
@@ -92,5 +92,75 @@ export const courses = [
       ctas: ["Request HR & Payroll Syllabus", "Contact Us"],
     },
   },
+{
+  slug: "full-stack-development",
+  track: "Full Stack Development",
+  eco: "Web Development",
+  ecoColor: "#0284c7",
+  badge: "NEW COURSE",
+  badgeColor: "#16a34a",
+  img: courseImages.fullstack,
+
+  weeks: "12-16 Weeks",
+  rating: "4.9",
+  enrolled: "New Batch",
+  old: "₹45,000",
+  price: "₹29,999",
+  off: "Limited Offer",
+
+  title: "Full Stack Web Development Training",
+  desc: "Learn frontend and backend web development using HTML, CSS, JavaScript, React, Next.js, Node.js, Express.js and databases. Build practical web applications and develop full stack development skills.",
+
+  page: {
+    seoTitle: "Full Stack Development Training Online | Peakhire Solutions",
+
+    metaDesc: "Learn full stack web development with HTML, CSS, JavaScript, React, Next.js, Node.js, Express.js and databases through practical training at Peakhire Solutions.",
+
+    intro: "Build your web development skills with Full Stack Development Training at Peakhire Solutions. Learn frontend development, backend development, database integration and API development through a structured learning pathway. Develop practical knowledge and work toward building complete web applications. Contact our team to confirm the current syllabus, batch schedule and training availability.",
+
+    sections: [
+      {
+        icon: "code-slash",
+        title: "Frontend Development",
+        text: "Learn HTML, CSS, JavaScript, responsive web design, React.js, component-based development, hooks, state management and Next.js fundamentals. Develop responsive and interactive user interfaces."
+      },
+
+      {
+        icon: "server",
+        title: "Backend Development",
+        text: "Understand Node.js, Express.js, server-side development, REST APIs, authentication, authorization, middleware and backend application architecture. Learn how frontend applications communicate with backend services."
+      },
+
+      {
+        icon: "database",
+        title: "Database & API Integration",
+        text: "Learn database fundamentals, SQL, MySQL, MongoDB, CRUD operations, database connectivity and API integration. Understand how to store, retrieve and manage application data."
+      },
+
+      {
+        icon: "laptop",
+        title: "Practical Projects",
+        text: "Develop practical web applications by combining frontend, backend and database technologies. Ask our team about project assignments, Git and GitHub, deployment, hosting and hands-on learning included in the current batch."
+      },
+
+      {
+        icon: "people-fill",
+        title: "Who Can Join?",
+        text: "Fresh graduates, students, aspiring web developers, IT professionals and career switchers interested in frontend and backend development may consider this course. Contact our team to confirm prerequisites and the recommended learning path."
+      },
+
+      {
+        icon: "briefcase-fill",
+        title: "Career Preparation",
+        text: "Prepare for full stack developer and web developer opportunities with technical learning, project guidance, resume preparation and interview practice where included in the selected program. Training and career assistance do not guarantee employment or selection."
+      }
+    ],
+
+    ctas: [
+      "Request Full Stack Syllabus",
+      "Enquire on WhatsApp"
+    ]
+  }
+},
 ];
 export const getCourse = (slug) => courses.find((c) => c.slug === slug);

@@ -33,7 +33,7 @@ export default function Home() {
         </section>
         <IndustrySectors />
         <RecruitmentSection onLead={openLead} />
-        <CourseCatalog onEnroll={(c) => openLead(`Enroll: ${c.title}`, `${c.price} · ${c.weeks}`)} />
+        <CourseCatalog onEnroll={(c) => openLead(`Enroll: ${c.title}`, c.weeks)} />
         <CareerEcosystem />
         <PricingSection onSelect={(p) => openLead(p.name, "I would like to know more about this package.")} />
         <Testimonials />

@@ -1,4 +1,14 @@
 import { recruitment as r } from "@/data/company";
+
+const alumniCompanies = [
+  { name: "accenture", color: "#111827", accent: "#a100ff" },
+  { name: "aws", color: "#232f3e", accent: "#ff9900" },
+  { name: "Capgemini", color: "#0070ad", accent: "#0070ad" },
+  { name: "intel", color: "#0071c5", accent: "#0071c5" },
+  { name: "Microsoft", color: "#5e5e5e", accent: "#f25022" },
+  { name: "TCS", color: "#0067b1", accent: "#e91e63" },
+];
+
 export default function RecruitmentSection({ onLead }) {
   return (
     <section id="recruitment" className="ph-section">
@@ -51,8 +61,8 @@ export default function RecruitmentSection({ onLead }) {
           ))}
         </div>
 
-        <div className="row g-4 align-items-stretch">
-          <div className="col-lg-7">
+        <div className="row">
+          <div className="col-12">
             <div className="ph-card p-4 h-100">
               <h3 className="h5 fw-bold mb-3">{r.processTitle}</h3>
               {r.steps.map((s, i) => (
@@ -75,28 +85,38 @@ export default function RecruitmentSection({ onLead }) {
               <small className="text-secondary">{r.rolesNote}</small>
             </div>
           </div>
-          <div className="col-lg-5">
-            <div
-              className="ph-plan primary ph-card h-100"
-              style={{ transform: "none" }}
-            >
-              <div className="ph-eyebrow text-info">Transparent terms</div>
-              <h3 className="h4 fw-bold mt-1">{r.commercialTitle}</h3>
-              <p className="small text-white-50 flex-grow-1">{r.commercial}</p>
-              <button
-                className="btn btn-ph w-100 py-2"
-                onClick={() =>
-                  onLead(
-                    r.ctaPrimary,
-                    "Tell us about the role, skills, experience and timeline.",
-                  )
-                }
-              >
-                {r.ctaPrimary} →
-              </button>
+        </div>
+
+        <section className="ph-alumni mt-5" aria-labelledby="alumni-title">
+          <h3 id="alumni-title" className="ph-h2 text-center mb-4">
+            Our <span className="text-ph">Alumni</span> Work At
+          </h3>
+          <div className="ph-alumni-window">
+            <div className="ph-alumni-track">
+              {[0, 1].map((set) => (
+                <div
+                  key={set}
+                  className="ph-alumni-group"
+                  aria-hidden={set === 1 ? "true" : undefined}
+                >
+                  {alumniCompanies.map((company) => (
+                    <div className="ph-alumni-card" key={`${set}-${company.name}`}>
+                      <span style={{ color: company.color }}>
+                        {company.name === "aws" ? (
+                          <><b>aws</b><i style={{ backgroundColor: company.accent }} /></>
+                        ) : company.name === "accenture" ? (
+                          <><b>accenture</b><em style={{ color: company.accent }}>›</em></>
+                        ) : (
+                          <b>{company.name}</b>
+                        )}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              ))}
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
   );

@@ -15,8 +15,8 @@ export default function HeroSection({ onEnroll }) {
         <b className="text-dark">PeakHire</b> delivers instructor-led,
         project-driven IT certification training in{" "}
         <b className="text-dark">
-          Workday HCM, ServiceNow, SAP S/4HANA, GenAI &amp; Data Analytics and
-          QA Automation
+          Workday, ServiceNow, SAP S/4HANA, Data Analytics, HR &amp; Payroll,
+          and Full Stack Development
         </b>{" "}
         with real-time server sandboxes, comprehensive mock evaluation, and
         dedicated 1-on-1 placement support.

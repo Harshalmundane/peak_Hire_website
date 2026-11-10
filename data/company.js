@@ -21,7 +21,7 @@ export const recruitment = {
   commercialTitle: "Commercial Engagement",
   commercial: "Recruitment fees and payment milestones are agreed with the employer before work begins. Where agreed, fees may become payable after a successful placement. Specific terms are documented for each client engagement.",
   ctaPrimary: "Share Your Hiring Requirement",
-  ctaSecondary: "Become a Hiring Partner",
+  ctaSecondary: "Share Your Resume",
 };
 export const about = {
   eyebrow: "About Us",

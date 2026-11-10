@@ -61,10 +61,14 @@ function initialSetup() {
   const ss = SHEET_ID
     ? SpreadsheetApp.openById(SHEET_ID)
     : SpreadsheetApp.getActiveSpreadsheet();
+
   if (!ss) {
-    throw new Error("No spreadsheet is connected. Set SHEET_ID to the ID from the Google Sheet URL, or open this script from that sheet and run initialSetup again.");
+    throw new Error("Could not open the spreadsheet. Check SHEET_ID.");
   }
-  PropertiesService.getScriptProperties().setProperty(SHEET_ID_PROPERTY, ss.getId());
+
+  PropertiesService.getScriptProperties()
+    .setProperty(SHEET_ID_PROPERTY, ss.getId());
+
   getSheet_();
 }
 
